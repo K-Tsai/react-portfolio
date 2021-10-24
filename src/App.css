@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+body {
+  background: #F7F5E6;
+  color: #333A56;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background: #333A56;
+  font-family: 'Vollkorn', serif;
+  font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.site-footer {
+  background: #333A56;
+  color: #F7F5E6;
+  font-family: 'Vollkorn', serif;
+}
+
+.footer-link {
+  color: #F7F5E6;
+}
+
+a:hover {
+  color: #F7F5E6;
+}
+
+.btn-link {
+  color: #F7F5E6;
+  font-family: 'Vollkorn', serif;
+}
+
+.btn-link:hover {
+  color:#F7F5E6;
+}
+
+.about {
+  margin: 1em 0 11em 0;
+  padding: 1em;
+  position: relative;
+}
+
+.about h1 {
+  color:#333A56;
+  margin: 2em;
+  font-family: 'Vollkorn', serif;
+}
+
+.about img {
+  border-radius: 50%
+}
+
+.about span {
+  display: block;
+  color: #333A56;
+  position: absolute;
+  left: 115px;
+  font-family: 'Exo', sans-serif;
+  margin-top: 1rem;
+}
+
+.about .desc {
+  padding: 2em;
+  border-left:4px solid #333A56;
+}
+
+.about .desc h3 {
+  font-family: 'Vollkorn', serif;
+  color: #333A56;
+}
+
+.about .desc p{
+  line-height:2;
+  color:#333A56;
+  font-family: 'Exo', sans-serif;
+}
+
+.card-title {
+  font-family: 'Vollkorn', serif;
+  color:#333A56;
+}
+
+.card-text {
+  font-family: 'Exo', sans-serif;
+  color:#333A56;
+}
+
+.footer-btn, .btn {
+  color: #FFF;
+  background: #333A56;
+  border-color: #333A56;
+  font-family: 'Exo', sans-serif;
+}
+
+.email-button, .email-link {
+  color: #333A56;
+  font-size: 2em;
+  margin-right: 10px;
+}
+.email-link {
+  font-family: 'Vollkorn', serif;
+}
+
+.btn:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.links {
+  margin-left: 8.333333%
+}
+
+.contact-header {
+  font-family: 'Vollkorn', serif;
+  color: #333A56;
+}
+
+.contact-form {
+  margin: 9em auto 9em auto;
+}
+
+.form-label {
+  color: #333A56;
+  font-family: 'Exo', sans-serif;
+}
+
+@media only screen and(max-width: 991px) {
+  .profile {
+      display:flex;
+      align-items:center;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+  a.btn.btn-link {
+      margin-bottom: 1.5em;
+  }
+
+  .about .desc {
+      border-left: none;
+      margin-top: 2em;
+  }
+
+  .about {
+      margin-bottom: 2em;
+  }
+
+  .links {
+      text-align: center;
+      margin-left: 0em;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 540px) {
+ .contact-form {
+  margin:2em 0em 2em 0em;
+ }
 }

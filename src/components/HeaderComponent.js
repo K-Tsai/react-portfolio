@@ -1,5 +1,5 @@
 import React, {Component} from 'react'; 
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
+import { Nav, Navbar, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -18,19 +18,27 @@ class Header extends Component {
 
     render() {
         return(
-            <Navbar dark sticky="top" expand="lg">
-                <div className="container">
+            <Navbar className="navbar" dark sticky="top" expand="lg">
                     <NavbarToggler onClick={this.toggleNav} />
                     <Collapse isOpen={this.state.isNavOpen} navbar>
                         <Nav navbar >
                             <NavItem>
                                 <NavLink className="nav-link" to="/aboutme">
-                                    Home
+                                    About Me
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/projects">
+                                    Projects
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/contact">
+                                    Contact Me
                                 </NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
-                </div>
             </Navbar>
         ); 
     }
