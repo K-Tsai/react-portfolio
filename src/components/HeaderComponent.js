@@ -21,7 +21,7 @@ class Header extends Component {
             <Navbar className="navbar" dark sticky="top" expand="lg">
                     <NavbarToggler onClick={this.toggleNav} />
                     <Collapse isOpen={this.state.isNavOpen} navbar>
-                        <Nav navbar >
+                        <Nav className="nav-content" navbar >
                             <NavItem>
                                 <NavLink className="nav-link" to="/aboutme">
                                     About Me

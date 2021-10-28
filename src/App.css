@@ -9,6 +9,10 @@ body {
   font-size: 18px;
 }
 
+.nav-content {
+  margin-left: 15px;
+}
+
 .site-footer {
   background: #333A56;
   color: #F7F5E6;
